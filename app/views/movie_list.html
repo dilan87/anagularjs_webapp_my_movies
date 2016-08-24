@@ -1,0 +1,16 @@
+<h1 style="text-align: center;">My Movies</h1>
+<div class="nav_bar">
+    Order By : <select ng-model="selectedOrder" ng-options="option for option in orderByOptions">
+    </select>
+    <a ui-sref="new_movie" class="btn_add_new_movie"><i class="fa fa-plus"></i> Add New Movie</a>
+</div>
+<ul class="movie_list">
+    <li ng-repeat="movie in movies| orderBy:selectedOrder" class="movie_item">
+        <h2 class="movie_title">{{movie.title}} ({{movie.releseYear}})</h2>
+        <p class="movie_description">{{movie.description}}</p>
+        <p class="movie_rank">
+            Rating : <i class="fa fa-star" ng-repeat="i in loopTo(movie.rating)"></i>
+            <br /><a ui-sref="movie_detail({id:movies.indexOf(movie)})" class="btn_details">Details</a>
+        </p>
+    </li>
+</ul>

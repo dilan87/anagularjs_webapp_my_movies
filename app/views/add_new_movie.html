@@ -1,0 +1,30 @@
+<div class="nav_bar">
+    <a ui-sref="home" class="btn_add_new_movie"><i class="fa fa-arrow-left"></i> Go Back</a>
+</div>
+<form ng-submit="submitNewMovie()" name="participanForm" class="movie_form">
+    <h1>Add New Movie</h1>
+    <label>Name</label>
+    <input type="text" id="movie_title" ng-model="form.title" required="" />
+    <label>Description</label>
+    <textarea id="movie_description" ng-model="form.description" required=""></textarea> 
+    <label>Director</label>
+    <input type="text" id="movie_director" ng-model="form.director" required="" />
+    <label>Relese Year</label>
+    <input type="number" id="movie_releseYear" ng-model="form.releseYear" required="" min="1900" max="2016" />
+    <label>Language</label>
+    <input type="text" id="movie_language" ng-model="form.Language" required="" />
+    <label>Country</label>
+    <input type="text" id="Language_country" ng-model="form.Country" required="" />
+    <label>Rating</label>
+    <input type="number" id="Language_rating" ng-model="form.rating" required="" min="0" max="10" />
+    <label>Characters</label>
+    
+    <div class="form_characters_wrapper">
+        <div ng-repeat="NewCharacter in NewCharacters">
+            <input ng-model="NewCharacter.actor" type="text"  size="40" style="width: 43%; margin-right: 10px;" placeholder="Actor Name" required="" />
+            <input ng-model="NewCharacter.role" type="text"  size="40" style="width: 43%" placeholder="Role" required=""/>
+        </div>
+        <p ng-click="addInputItem()" class="btn_add_new_character"><i class="fa fa-plus"></i></p>
+    </div>
+    <button class="btn_submit_new_movie" type="submit">Add New Movie</button>
+</form>

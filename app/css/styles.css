@@ -1,0 +1,202 @@
+/* app css stylesheet */
+*{
+    font-family: 'Arial';
+}
+body{
+    background: rgb(227, 229, 236) none repeat scroll 0% 0%
+}
+.nav_bar{
+    margin: 0;
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+select{
+    padding: 10px;
+    border: 1px solid #888888;
+    border-radius: 5px;
+       
+}
+.movie_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.movie_item{
+    border: 1px solid #f8f8f8;
+    padding: 10px;
+}
+.movie_item:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.movie_title{
+    width: 80%;
+    height: auto;
+    display: block;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+.movie_details_wrapper{
+    margin-top: 10px;
+    float: left;
+    clear: both;
+    width: -moz-available;
+    height: auto;
+    display: block;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+.movie_details_wrapper:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.movie_rank{
+    width: 20%;
+    height: auto;
+    display: block;
+    float: left;
+    text-align: right;
+    padding: 0px;
+    margin: 0px;
+}
+.movie_description{
+    width: 80%;
+    height: auto;
+    display: block;
+    float: left;
+    text-align: justify;
+
+
+}
+.movie_item:nth-child(odd){
+    background: #f8f8f8;
+}
+.movie_item:nth-child(even){
+    background: #fff;
+}
+.movie_thumb{
+    max-width: 70px;
+    max-height: 100px;
+}
+.movie_form{
+     margin: 0 10%;
+    padding: 30px 0;
+}
+.movie_form label{
+    width: 10%;
+    height: auto;
+    display: block;
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+}
+.movie_form input, .movie_form textArea, .form_characters_wrapper{
+    width: 85%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px dotted #B2C4DD;
+    margin-bottom: 15px;
+    float: left;
+    clear: right;
+    background: rgb(229, 232, 242) none repeat scroll 0% 0%;
+}
+.form_characters_wrapper{
+    width: 50%;
+    height: auto;
+    display: block;
+}
+h1{
+    color: #757575;
+    text-align: center;
+}
+
+.fa-star{
+    color: #fc972b !important;
+}
+.btn_add_new_movie{
+    background: #00cc00;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 5px;
+    float: right;
+}
+.btn_submit_new_movie{
+    background: #00cc00;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 5px;
+    float: left;
+    margin: 0 10%;
+    border: none;
+    cursor: pointer;
+    clear: both;
+}
+.btn_details{
+    background: #f8bc00;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+}
+.btn_add_new_character{
+    background: #00cc00;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 5px;
+    float: left;
+    margin: 0;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    
+}
+.form_characters_wrapper{
+    background: #d8ddef;
+}
+.movie_character_list li{
+    width: 100%;
+    float: left;
+    clear: both;
+}
+.character_role_wrapper{
+    color: #9b9b9b;
+}
+footer{
+   margin: 0 10%; 
+   float: right;
+   clear: both;
+   text-align: right;
+}
+footer p{
+    font-size: 12px;
+    color: #bebebe;
+    text-align: right;
+    
+}

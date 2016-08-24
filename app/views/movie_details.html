@@ -1,0 +1,24 @@
+<div class="nav_bar">
+    <a ui-sref="home" class="btn_add_new_movie"><i class="fa fa-arrow-left"></i> Go Back</a>
+</div>
+<p>&nbsp</p>
+<ul class="movie_list">
+    <li class="movie_item">
+        <h2 class="movie_title">{{movie_details.title}} ({{movie_details.releseYear}})</h2>
+        <p class="movie_rank">
+            Rating : <i class="fa fa-star" ng-repeat="i in loopTo(movie_details.rating)"></i>
+        </p>
+        <div class="movie_details_wrapper">
+            <p class="movie_description">{{movie_details.description}}</p>
+            <p class="movie_description">Directed By : {{movie_details.director}}</p>
+            <p class="movie_description">Relese year : {{movie_details.releseYear}}</p>
+            <p class="movie_description">Language : {{movie_details.Language}}</p>
+            <p class="movie_description">Country : {{movie_details.Country}}</p>
+            <h4 class="movie_title">Characters</h4>
+            <ul class="movie_character_list">
+                <li ng-repeat="character in movie_details.characters">{{character.role}} <span class="character_role_wrapper">({{character.actor}})</span></li>
+            </ul>
+        </div>
+    </li>
+</ul>
+
